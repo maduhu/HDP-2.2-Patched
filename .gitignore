@@ -10,3 +10,4 @@ target/site/clover
 *.class
 *.DS_Store
 hive-scripts/src/main/scripts/import-all.sh
+*.patch
