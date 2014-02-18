@@ -55,7 +55,9 @@ public class IdUserGroup {
   }
 
   private boolean isExpired() {
-    return lastUpdateTime - System.currentTimeMillis() > TIMEOUT;
+	//fix for always updating user/group maps cache 
+    //return lastUpdateTime - System.currentTimeMillis() > TIMEOUT;
+	return true;
   }
 
   private void checkAndUpdateMaps() {
